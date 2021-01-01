@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _FIFO2_HPP
+#define _FIFO2_HPP
 #include <iostream>
 #include <deque>
 
@@ -79,3 +80,5 @@ std::istream& operator>> (std::istream& in, QueueORGN<T1>& que)
 	que.addItem(value);
 	return in;
 }
+
+#endif
